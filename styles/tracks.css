@@ -1,0 +1,123 @@
+
+/*/////////////////////////////////////////
+    Tracks
+/////////////////////////////////////////*/
+.tracks {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    opacity: 1;
+    z-index: -1;
+}
+
+@keyframes track-end {
+    0% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.tracks:before {
+    animation: track-end 18s linear infinite;
+    display: block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #bdc7cc;
+    top: 0;
+    left: 0;
+    box-shadow: -5px 5px 0 0 #bdc7cc,
+        -11px 10px 0 0 #bdc7cc,
+        -17px 15px 0 0 #bdc7cc,
+        -23px 20px 0 0 #bdc7cc,
+        -29px 25px 0 0 #bdc7cc,
+        -35px 30px 0 0 #bdc7cc,
+        -41px 35px 0 0 #bdc7cc,
+        -47px 40px 0 0 #bdc7cc,
+        -53px 45px 0 0 #bdc7cc,
+        -59px 50px 0 0 #bdc7cc,
+        -65px 55px 0 0 #bdc7cc,
+        -71px 60px 0 0 #bdc7cc,
+        -77px 65px 0 0 #bdc7cc,
+        -83px 70px 0 0 #bdc7cc,
+        -89px 75px 0 0 #bdc7cc,
+        -95px 80px 0 0 #bdc7cc,
+        -101px 85px 0 0 #bdc7cc,
+        -107px 90px 0 0 #bdc7cc,
+        -113px 95px 0 0 #bdc7cc,
+        -119px 100px 0 0 #bdc7cc,
+        -125px 105px 0 0 #bdc7cc,
+        -131px 110px 0 0 #bdc7cc;
+}
+
+.tracks:after {
+    animation: track-end 18s linear infinite;
+    display: block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #bdc7cc;
+    top: 0;
+    left: 8px;
+    box-shadow: -5px 5px 0 0 #bdc7cc,
+        -11px 10px 0 0 #bdc7cc,
+        -17px 15px 0 0 #bdc7cc,
+        -23px 20px 0 0 #bdc7cc,
+        -29px 25px 0 0 #bdc7cc,
+        -35px 30px 0 0 #bdc7cc,
+        -41px 35px 0 0 #bdc7cc,
+        -47px 40px 0 0 #bdc7cc,
+        -53px 45px 0 0 #bdc7cc,
+        -59px 50px 0 0 #bdc7cc,
+        -65px 55px 0 0 #bdc7cc,
+        -71px 60px 0 0 #bdc7cc,
+        -77px 65px 0 0 #bdc7cc,
+        -83px 70px 0 0 #bdc7cc,
+        -89px 75px 0 0 #bdc7cc,
+        -95px 80px 0 0 #bdc7cc,
+        -101px 85px 0 0 #bdc7cc,
+        -107px 90px 0 0 #bdc7cc,
+        -113px 95px 0 0 #bdc7cc,
+        -119px 100px 0 0 #bdc7cc,
+        -125px 105px 0 0 #bdc7cc,
+        -131px 110px 0 0 #bdc7cc;
+}
+
+.tracks-mask {
+    display: block;
+    position: absolute;
+    background-color: #ebebeb;
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 8px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    animation: tracks-mask 18s linear infinite;
+    /**********/
+}
+
+@keyframes tracks-mask {
+    0% {
+        top: -26px;
+        right: 65px;
+    }
+
+    100% {
+        top: 125px;
+        right: 242px;
+    }
+}
